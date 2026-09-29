@@ -9,8 +9,8 @@ FROM node:24-alpine AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 
-COPY --from=deps /app/node_modules ./node_modules
-COPY app/package.json app/server.js ./
+COPY --from=deps /app /app
+COPY app/server.js ./
 
 RUN addgroup -S app && adduser -S app -G app \
   && chown -R app:app /app
