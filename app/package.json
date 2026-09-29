@@ -1,0 +1,1 @@
+{"description":"Tiny URL shortener — deploy payload for the GCP DevOps pipeline project","engines":{"node":">=20"},"license":"MIT","main":"server.js","name":"snip-api","scripts":{"start":"node server.js","test":"node --test"},"version":"1.0.0"}
